@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.FarmaciaFc.controller.OperazioniMedicoController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="605.0">
+         <children>
+            <Label layoutX="3.0" prefHeight="33.0" prefWidth="175.0" text="Prescrizione">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </Label>
+            <TableView fx:id="prescr" layoutX="6.0" layoutY="56.0" prefHeight="315.0" prefWidth="587.0">
+              <columns>
+                  <TableColumn fx:id="codiceRicetta" prefWidth="182.0" text="Codice Ricetta" />
+                  <TableColumn fx:id="codiceFiscale" prefWidth="212.0" text="Codice Fiscale Paziente" />
+                  <TableColumn fx:id="dataCreazione" prefWidth="192.0" text="Data creazione" />
+              </columns>
+            </TableView>
+            <Button fx:id="elimina" layoutX="273.0" layoutY="4.0" mnemonicParsing="false" onAction="#elimina" text="Elimina" />
+            <Button fx:id="modifica" layoutX="386.0" layoutY="4.0" mnemonicParsing="false" onAction="#headerCerca" text="Modifica" />
+            <Text layoutX="3.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selezionare la prescrizione per svolgere le varie operazioni!" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

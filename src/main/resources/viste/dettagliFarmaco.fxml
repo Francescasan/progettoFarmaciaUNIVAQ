@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.FarmaciaFc.controller.DettagliFarmacoController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="605.0">
+         <children>
+            <Label layoutX="182.0" prefHeight="33.0" prefWidth="237.0" text="Dettagli farmaco">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="56.0" prefHeight="27.0" prefWidth="114.0" text="Nome Farmaco :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="89.0" text="Codice Farmaco :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="180.0" text="Effetti Indesiderati :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="147.0" text="Utilizzo :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="120.0" text="Contenuto :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text id="nomeFarmaco" fx:id="nomeFarmaco" layoutX="182.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmaco" />
+            <Text id="codFarmaco" fx:id="codFarmaco" layoutX="182.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice Farmaco" />
+            <Text id="contenuto" fx:id="contenuto" layoutX="182.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenuto" />
+            <Text id="tipoUso" fx:id="tipoUso" layoutX="183.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TipoUso" />
+            <Text id="effettiIndesiderati" fx:id="effettiIndesiderati" layoutX="182.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="effettiIndesiderati" wrappingWidth="387.017578125" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

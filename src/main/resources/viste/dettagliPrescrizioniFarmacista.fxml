@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.FarmaciaFc.controller.DettagliPrescrizioneFarmacistaController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="605.0">
+         <children>
+            <Label layoutX="181.0" layoutY="1.0" prefHeight="27.0" prefWidth="238.0" text="Dettagli prescrizione">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="operazioniFarmacista" layoutX="3.0" layoutY="69.0" prefHeight="218.0" prefWidth="593.0">
+              <columns>
+                  <TableColumn fx:id="nomeFarmaco" prefWidth="164.0" text="Nome Medicinale" />
+                  <TableColumn fx:id="quantita" prefWidth="134.0" text="Quantità" />
+                  <TableColumn fx:id="dosaggio" prefWidth="124.0" text="Dosaggio" />
+                  <TableColumn fx:id="medico" prefWidth="170.0" text="Medico" />
+              </columns>
+            </TableView>
+            <Button fx:id="tornaIndietro" layoutX="22.0" layoutY="2.0" mnemonicParsing="false" onAction="#headerIndietro" text="Torna indietro" />
+            <Button fx:id="evadi" layoutX="278.0" layoutY="312.0" mnemonicParsing="false" onAction="#evadi" text="Evadi" />
+            <Text id="codPrescrizione" layoutX="249.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="codice prescrizione" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

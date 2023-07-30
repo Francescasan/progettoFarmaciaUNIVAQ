@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.FarmaciaFc.controller.DettagliFarmacoAmministratoreController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="829.0">
+         <children>
+            <Label layoutX="177.0" layoutY="-2.0" prefHeight="33.0" prefWidth="229.0" text="Dettagli farmaco">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </Label><Button fx:id="elimina" layoutX="419.0" layoutY="295.0" mnemonicParsing="false" onAction="#elimina" prefHeight="0.0" prefWidth="57.0" text="Elimina" />
+            <Button fx:id="modifica" layoutX="269.0" layoutY="295.0" mnemonicParsing="false" onAction="#modifica" text="Modifica" />
+            <Text fx:id="nomeFarmaco" layoutX="184.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmaco" />
+            <Text fx:id="effettiIndesiderati" layoutX="182.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effetti" wrappingWidth="315.22900390625" />
+            <Label layoutX="7.0" layoutY="51.0" prefHeight="27.0" prefWidth="114.0" text="Nome Farmaco :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="3.0" layoutY="190.0" text="Effetti Indesiderati :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="340.0" layoutY="89.0" prefHeight="20.0" prefWidth="121.0" text="Quantità Minima :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="2.0" layoutY="227.0" text="Contenuto :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="342.0" layoutY="124.0" text="Utilizzo :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Text fx:id="quantitaMinima" layoutX="474.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantita minima" />
+            <Text fx:id="tipoContenuto" layoutX="182.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenuto" wrappingWidth="179.22900390625" />
+            <Text fx:id="tipoUso" layoutX="474.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo uso" wrappingWidth="114.0" />
+            <Label layoutX="342.0" layoutY="56.0" text="Codice Farmaco :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="6.0" layoutY="88.0" text="Quantità Disponibile :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="2.0" layoutY="122.0" text=" Casa Farmaceutica :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutY="153.0" text=" Metodo di Conservazione :" textFill="#0015ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Text fx:id="id" layoutX="476.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice Farmaco" />
+            <Text fx:id="disponibilita" layoutX="184.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantita disponibile" />
+            <Text fx:id="casaFarmaceutica" layoutX="183.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casa Farmaceutica" />
+            <Text fx:id="metodoConservazione" layoutX="183.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo DI Conservazione" wrappingWidth="403.7783203125" />
+            <Button fx:id="rifornimento" layoutX="99.0" layoutY="295.0" mnemonicParsing="false" onAction="#rifornimento" text="Rifornimento" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

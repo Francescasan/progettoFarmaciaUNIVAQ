@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="703.0" style="-fx-background-color: #008f39;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.FarmaciaFc.controller.LoginController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="252.0" layoutY="23.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="237.0" prefHeight="48.0" prefWidth="134.0" text="Farmacia FC" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="238.0" layoutY="316.0" prefHeight="29.0" prefWidth="229.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="238.0" layoutY="360.0" prefHeight="29.0" prefWidth="229.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="238.0" layoutY="416.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="25.0" prefWidth="110.0" text="Entra" textFill="#171717" />
+      <Label fx:id="loginErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="277.0" prefHeight="39.0" prefWidth="317.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="72.0" layoutX="633.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fc1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="registrati" layoutX="353.0" layoutY="416.0" mnemonicParsing="false" onAction="#regAction" prefHeight="25.0" prefWidth="110.0" text="Registrati" textFill="#171717" />
+   </children>
+</AnchorPane>

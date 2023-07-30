@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.FarmaciaFc.controller.AggiuntaFarmacoPrescrizioneController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="605.0">
+         <children>
+            <Label layoutX="10.0" layoutY="-2.0" prefHeight="27.0" prefWidth="581.0" text="Aggiunta nuovo farmaco alla prescrizione">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="conferma" layoutX="432.0" layoutY="175.0" mnemonicParsing="false" onAction="#handerConferma" text="Conferma" />
+            <TextField fx:id="nomeFarmaco" layoutX="22.0" layoutY="69.0" prefHeight="25.0" prefWidth="235.0" promptText="Nome Farmaco" />
+            <TextField fx:id="codiceFarmaco" layoutX="22.0" layoutY="112.0" prefHeight="25.0" prefWidth="235.0" promptText="Codice Farmaco" />
+            <TextField fx:id="quantita" layoutX="294.0" layoutY="69.0" prefHeight="25.0" prefWidth="235.0" promptText="Quantità" />
+            <Button fx:id="annulla" layoutX="438.0" layoutY="220.0" mnemonicParsing="false" onAction="#handerAnnulla" text="Annulla" />
+            <Button fx:id="addFarmaco" layoutX="134.0" layoutY="328.0" mnemonicParsing="false" onAction="#handerCerca" text="Aggiungi Farmaco" />
+            <TextField fx:id="dosaggio" layoutX="22.0" layoutY="163.0" prefHeight="99.0" prefWidth="337.0" promptText="Dosaggio" />
+            <Label fx:id="idPrescrizione" layoutX="271.0" layoutY="6.0" />
+            <Text layoutX="22.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aggiungere altro farmaco alla prescrizione?">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
